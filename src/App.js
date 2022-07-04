@@ -43,6 +43,7 @@ class App extends React.Component {
     this.setState({ status: "Start Guessing..." });
     this.setState({ score: 20 });
     this.setState({ bgColor: "#1b262c" });
+    this.setState({ secretNumber: Math.trunc(Math.random() * 20) + 1 });
     this.inNumber.value = "";
   };
 
