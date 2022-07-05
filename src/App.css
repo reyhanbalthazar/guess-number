@@ -7,7 +7,7 @@
 }
 
 .App {
-  height: 100vh;
+  height: 59.7rem;
   text-align: center;
 }
 
@@ -32,6 +32,14 @@
 
 .middle {
   position: relative;
+}
+
+.middle .alert {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 180%);
+  z-index: 1;
+  width: 100%;
 }
 
 .guess-number {
@@ -74,6 +82,9 @@
   margin-bottom: 20px;
   width: 50%;
   height: 100px;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
+  border: #bbe1fa solid;
+  background-color: transparent;
+  color: #bbe1fa;
 }
