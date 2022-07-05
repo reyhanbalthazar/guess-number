@@ -41,7 +41,7 @@ class App extends React.Component {
         setTimeout(() => {
           this.setState({ alertText: "You win the Game!" });
           this.setState({ alertColor: "success" });
-          this.setState({ bgColor: "#3282B8" });
+          this.setState({ bgColor: "#0F4C75" });
           this.setState({ secretNumberVisible: 1 });
           this.setState({ alertIsOpen: true });
           this.setState({ btnCheckDisable: true });
@@ -90,6 +90,7 @@ class App extends React.Component {
   };
 
   render() {
+    console.log(this.state.secretNumber);
     return (
       <div className="App" style={{ backgroundColor: this.state.bgColor }}>
         <div className="top">
@@ -106,7 +107,7 @@ class App extends React.Component {
           >
             {this.state.alertText}
           </Alert>
-          <h1 className="guess-number">guess my number</h1>
+          <h1 className="guess-number">GUESS MY NUMBER</h1>
           <div className="middle-square">
             {this.state.secretNumberVisible === false ? (
               "?"
